@@ -1,5 +1,6 @@
 # NOTE:
-#   'just build' and 'just run' to build/run locally
+#   'just build' to build
+#   'just run' to process the latex file into a resume
 
 # Use Ubuntu-latest to mimic GitHub Actions
 FROM ubuntu:latest
@@ -9,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Update package list & install latex
 # TODO:  Double check package dependencies, there may be some redundancies
-RUN    apt-get update \
+RUN        apt-get update \
 	&& apt-get -y --no-install-recommends \
 		install \
 			texlive-base \

@@ -16,7 +16,7 @@ jobs:
       - name: Install Just
         run: |
           sudo apt-get update
-          sudo apt-get -y just
+          sudo apt-get -y install just
 
       - name: Build docker image
         run: just build

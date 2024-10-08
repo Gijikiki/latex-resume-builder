@@ -6,7 +6,6 @@ build:
 	docker build -t resume-builder .
 
 run: clean
-	echo $(pwd)
 	docker run --rm -v "{{ data-dir }}:/data" resume-builder 
 	ls "{{ data-dir }}"
 
@@ -14,3 +13,4 @@ clean:
 	rm -f "{{ data-dir }}/resume.aux" 
 	rm -f "{{ data-dir }}/resume.log" 
 	rm -f "{{ data-dir }}/resume.pdf"
+	rm -f "{{ data-dir }}/resume.out"

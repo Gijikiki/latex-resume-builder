@@ -1,4 +1,4 @@
-# Latex Resume Builder
+# LaTeX Resume Builder
 
 Takes a LaTeX file, and creates a PDF.
 
@@ -107,7 +107,7 @@ This will require 'docker' and 'just' to be installed.
 2.  From that directory, follow steps 2-5 from the "Locally (Option 1 - Resume
     is included in this repository)" instructions.
 
-Note - it should be possible to set up the latex-resume-builder as a subrepo of the directory you are in.
+Note - it should be possible to set up the latex-resume-builder as a git submodule of the directory you are in.
 
 ### Through GitHub Actions
 
@@ -123,7 +123,7 @@ Feel free to submit issues or pull requests. For major changes, please open an i
 
 ## Credits
 
-A friend if mine has the project '[glort](https://github.com/rbuysse/glort/tree/main)', which was the inspiration for this
+A friend of mine has the project '[glort](https://github.com/rbuysse/glort/tree/main)', which was the inspiration for this
 project.  That project builds a resume from a Markdown source, using Pandoc.  I studied that project to figure out
 how GitHub actions worked.
 

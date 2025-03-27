@@ -17,7 +17,9 @@ RUN        apt-get update \
 			texlive-latex-base \
 			texlive-latex-recommended \
 			texlive-latex-extra \
+			texlive-fonts-recommended \
 			texlive-fonts-extra \
+			texlive-xetex \
 	&& apt-get clean 
 
 # Everything is in data
@@ -27,4 +29,4 @@ WORKDIR /data
 RUN ["rm", "-f", "resume.aux", "resume.log", "resume.pdf"]
 
 # TODO: Should be a script with error handling & cleanup
-CMD ["pdflatex", "resume.tex"]
+CMD ["xelatex", "resume.tex"]

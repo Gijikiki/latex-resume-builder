@@ -20,6 +20,8 @@ RUN        apt-get update \
 			texlive-fonts-recommended \
 			texlive-fonts-extra \
 			texlive-xetex \
+			tex-gyre \
+			fonts-texgyre \
 	&& apt-get clean 
 
 # Everything is in data

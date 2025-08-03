@@ -131,3 +131,5 @@ how GitHub actions worked.
 
 The sample resume in data/ is a sample resume template by Vel (vel@latextemplates.com), and is licensed under the CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+The remaining files are licensed under the terms described in the
+[LICENSE.md](./LICENSE.md) file.
